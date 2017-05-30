@@ -12,6 +12,7 @@
 
 @property (nonatomic) float rightAnswers;
 @property (nonatomic) float wrongAnswers;
+@property (nonatomic) int totalQuestions;
 
 -(void)currentScore;
 
