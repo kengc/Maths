@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AdditionQuestion.h"
+#import "InputHandler.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -18,24 +20,33 @@ int main(int argc, const char * argv[]) {
 // To add the ability to exit the game
 // To add a scoring function to the game
     
-        int loop = 1;
-        char inputChars[255];
+        //int loop = 1;
+        //char inputChars[255];
+        BOOL gameOn = YES;
         
         do{
-            printf("Input a message: ");
-            fgets(inputChars, 255, stdin);
+            AdditionQuestion *question = [[AdditionQuestion alloc] init];
+            NSLog(@"question is: %@ ?", question.question);
             
-            NSLog(@"your input is: %s", inputChars);
+            NSString *userInput = [InputHandler parseUserInput];
             
-            NSString *inputString = [NSString stringWithCString:inputChars encoding:NSUTF8StringEncoding];
+            if([userInput isEqualToString:@"quit"]){
+                gameOn = NO;
+                
+            } else{
             
-            NSCharacterSet *characterSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+                NSInteger answer = [userInput integerValue]; //don't need * for NSInteger
             
-            NSString *trimmed = [inputString stringByTrimmingCharactersInSet:characterSet];
-            
-            NSLog(@"your input is: %@", trimmed);
-            
-        }while(loop == 1);
+                NSLog(@"answer is: %ld", (long)question.answer);
+                if(answer == question.answer)
+                {
+                    NSLog(@"Right!");
+                } else{
+                    NSLog(@"Wrong!");
+                }
+            //NSLog(@"your input is: %@", trimmed);
+            }
+        }while(gameOn);
         
         
     }

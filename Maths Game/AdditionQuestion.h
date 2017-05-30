@@ -10,4 +10,10 @@
 
 @interface AdditionQuestion : NSObject
 
+@property (nonatomic) NSString *question;
+@property (nonatomic) NSInteger answer;
+
+@property (nonatomic) long randomOne;
+@property (nonatomic) long randomTwo;
+
 @end
