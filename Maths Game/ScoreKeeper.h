@@ -10,7 +10,9 @@
 
 @interface ScoreKeeper : NSObject
 
-@property (nonatomic) NSInteger rightAnswers;
-@property (nonatomic) NSInteger wrongAnswers;
+@property (nonatomic) float rightAnswers;
+@property (nonatomic) float wrongAnswers;
+
+-(void)currentScore;
 
 @end

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "AdditionQuestion.h"
 #import "InputHandler.h"
+#import "ScoreKeeper.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -23,6 +24,8 @@ int main(int argc, const char * argv[]) {
         //int loop = 1;
         //char inputChars[255];
         BOOL gameOn = YES;
+        
+        ScoreKeeper *score = [[ScoreKeeper alloc] init];
         
         do{
             AdditionQuestion *question = [[AdditionQuestion alloc] init];
@@ -40,10 +43,13 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"answer is: %ld", (long)question.answer);
                 if(answer == question.answer)
                 {
+                    score.rightAnswers += 1;
                     NSLog(@"Right!");
                 } else{
+                    score.wrongAnswers += 1;
                     NSLog(@"Wrong!");
                 }
+                [score currentScore];
             //NSLog(@"your input is: %@", trimmed);
             }
         }while(gameOn);
