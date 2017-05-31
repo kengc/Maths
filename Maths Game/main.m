@@ -11,6 +11,7 @@
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
+#import "QuestionFactory.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -19,6 +20,8 @@ int main(int argc, const char * argv[]) {
         
         ScoreKeeper *score = [[ScoreKeeper alloc] init];
         QuestionManager *questions = [[QuestionManager alloc] init];
+        QuestionFactory *qFactory = [[QuestionFactory alloc] init];
+        
         
         do{
             Question *question = [[Question alloc] init];

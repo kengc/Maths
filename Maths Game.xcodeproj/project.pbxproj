@@ -16,6 +16,7 @@
 		73D02E361EDF3CA200F37BAB /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02E351EDF3CA200F37BAB /* SubtractionQuestion.m */; };
 		73D02E391EDF3CF000F37BAB /* DivisionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02E381EDF3CF000F37BAB /* DivisionQuestion.m */; };
 		73D02E3C1EDF3D0A00F37BAB /* MultiplicationQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02E3B1EDF3D0A00F37BAB /* MultiplicationQuestion.m */; };
+		73D02E401EDF542E00F37BAB /* QuestionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02E3F1EDF542E00F37BAB /* QuestionFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		73D02E381EDF3CF000F37BAB /* DivisionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DivisionQuestion.m; sourceTree = "<group>"; };
 		73D02E3A1EDF3D0A00F37BAB /* MultiplicationQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplicationQuestion.h; sourceTree = "<group>"; };
 		73D02E3B1EDF3D0A00F37BAB /* MultiplicationQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplicationQuestion.m; sourceTree = "<group>"; };
+		73D02E3E1EDF542E00F37BAB /* QuestionFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionFactory.h; sourceTree = "<group>"; };
+		73D02E3F1EDF542E00F37BAB /* QuestionFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				73D02DF91EDE018600F37BAB /* ScoreKeeper.h */,
 				73D02DF61EDDFFEB00F37BAB /* InputHandler.h */,
 				73D02DF71EDDFFEB00F37BAB /* InputHandler.m */,
+				73D02E3E1EDF542E00F37BAB /* QuestionFactory.h */,
+				73D02E3F1EDF542E00F37BAB /* QuestionFactory.m */,
 			);
 			path = "Maths Game";
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 				73D02DD71EDDC76500F37BAB /* main.m in Sources */,
 				73D02E3C1EDF3D0A00F37BAB /* MultiplicationQuestion.m in Sources */,
 				73D02DF81EDDFFEB00F37BAB /* InputHandler.m in Sources */,
+				73D02E401EDF542E00F37BAB /* QuestionFactory.m in Sources */,
 				73D02DDF1EDDCD3800F37BAB /* Question.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
