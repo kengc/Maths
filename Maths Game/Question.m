@@ -6,13 +6,13 @@
 //  Copyright © 2017 Kevin Cleathero. All rights reserved.
 //
 
-#import "AdditionQuestion.h"
+#import "Question.h"
 
-@implementation AdditionQuestion
+@implementation Question
 
 - (NSTimeInterval)answerTime{
     NSTimeInterval seconds = [_endTime timeIntervalSinceDate: _startTime];
-    NSLog(@"It took %.f seconds to answer", seconds);
+    //NSLog(@"It took %.f seconds to answer", seconds);
     return seconds;
 }
 

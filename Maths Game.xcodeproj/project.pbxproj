@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		73D02DD71EDDC76500F37BAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02DD61EDDC76500F37BAB /* main.m */; };
-		73D02DDF1EDDCD3800F37BAB /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02DDE1EDDCD3800F37BAB /* AdditionQuestion.m */; };
+		73D02DDF1EDDCD3800F37BAB /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02DDE1EDDCD3800F37BAB /* Question.m */; };
 		73D02DF81EDDFFEB00F37BAB /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02DF71EDDFFEB00F37BAB /* InputHandler.m */; };
 		73D02DFB1EDE018600F37BAB /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02DFA1EDE018600F37BAB /* ScoreKeeper.m */; };
 		73D02E301EDF1A1500F37BAB /* QuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D02E2F1EDF1A1500F37BAB /* QuestionManager.m */; };
@@ -29,8 +29,8 @@
 /* Begin PBXFileReference section */
 		73D02DD31EDDC76500F37BAB /* Maths Game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Maths Game"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D02DD61EDDC76500F37BAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		73D02DDD1EDDCD3800F37BAB /* AdditionQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
-		73D02DDE1EDDCD3800F37BAB /* AdditionQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		73D02DDD1EDDCD3800F37BAB /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		73D02DDE1EDDCD3800F37BAB /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		73D02DF61EDDFFEB00F37BAB /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
 		73D02DF71EDDFFEB00F37BAB /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		73D02DF91EDE018600F37BAB /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
@@ -69,8 +69,8 @@
 		73D02DD51EDDC76500F37BAB /* Maths Game */ = {
 			isa = PBXGroup;
 			children = (
-				73D02DDD1EDDCD3800F37BAB /* AdditionQuestion.h */,
-				73D02DDE1EDDCD3800F37BAB /* AdditionQuestion.m */,
+				73D02DDD1EDDCD3800F37BAB /* Question.h */,
+				73D02DDE1EDDCD3800F37BAB /* Question.m */,
 				73D02E2E1EDF1A1500F37BAB /* QuestionManager.h */,
 				73D02E2F1EDF1A1500F37BAB /* QuestionManager.m */,
 				73D02DD61EDDC76500F37BAB /* main.m */,
@@ -143,7 +143,7 @@
 				73D02DFB1EDE018600F37BAB /* ScoreKeeper.m in Sources */,
 				73D02DD71EDDC76500F37BAB /* main.m in Sources */,
 				73D02DF81EDDFFEB00F37BAB /* InputHandler.m in Sources */,
-				73D02DDF1EDDCD3800F37BAB /* AdditionQuestion.m in Sources */,
+				73D02DDF1EDDCD3800F37BAB /* Question.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

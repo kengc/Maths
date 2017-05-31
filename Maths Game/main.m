@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionQuestion.h"
+#import "Question.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
@@ -21,8 +21,9 @@ int main(int argc, const char * argv[]) {
         QuestionManager *questions = [[QuestionManager alloc] init];
         
         do{
-            AdditionQuestion *question = [[AdditionQuestion alloc] init];
-            questions
+            Question *question = [[Question alloc] init];
+            [questions addToArrayQuestion:question];
+            
             NSLog(@"question is: %@ ?", question.question);
             
             NSString *userInput = [InputHandler parseUserInput];
@@ -36,6 +37,7 @@ int main(int argc, const char * argv[]) {
                 NSInteger answer = [userInput integerValue]; //don't need * for NSInteger
                 
                 NSLog(@"answer is: %ld", (long)question.answer);
+                NSLog(@"%@", [questions timeOutput]);
                 score.totalQuestions += 1;
                 if(answer == question.answer)
                 {
@@ -50,7 +52,6 @@ int main(int argc, const char * argv[]) {
                 //NSLog(@"your input is: %@", trimmed);
             }
         }while(gameOn);
-        
         
     }
     return 0;
