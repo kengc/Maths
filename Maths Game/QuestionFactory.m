@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        _questionSubclassNames =  @[@"AdditionQuestion", @"DivisionQuestion", @"SubtractionQuestion", @"MultplictionQuestion"];
+        _questionSubclassNames =  @[@"AdditionQuestion", @"DivisionQuestion", @"SubtractionQuestion", @"MultiplicationQuestion"];
     }
     return self;
 }
@@ -25,7 +25,7 @@
 //    
 // Here's something a bit surprising though. The return type of this method should not be one of the 4 concrete subclasses of Question! Instead, the return type should be upcasted to the superclass Question.
     
-    int random = arc4random_uniform(4) + 1;
+    int random = arc4random_uniform(4);
     NSString *selectedType = self.questionSubclassNames[random];
     
     return [[NSClassFromString(selectedType) alloc]init];

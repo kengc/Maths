@@ -29,16 +29,16 @@
     self = [super init];  //instantiate base object NSObject
     if (self) {
         //now do additonQuestion stuff
-        _randomOne = arc4random_uniform(90) + 10; //returns an integer between 0 and the upper bound you pass it.
-        _randomTwo = arc4random_uniform(90) + 10;
-        NSString *stringBeginning = [NSString stringWithFormat:@"%ld", _randomOne];
-        NSString *stringEnd = [NSString stringWithFormat:@"%ld", _randomTwo];
-        
-        NSString *stringMiddle = [stringBeginning stringByAppendingString:@" + "];
-        _question = [stringMiddle stringByAppendingString:stringEnd];
-        
-        long sum = _randomOne + _randomTwo;
-        _answer = sum;
+//        _randomOne = arc4random_uniform(90) + 10; //returns an integer between 0 and the upper bound you pass it.
+//        _randomTwo = arc4random_uniform(90) + 10;
+//        NSString *stringBeginning = [NSString stringWithFormat:@"%ld", _randomOne];
+//        NSString *stringEnd = [NSString stringWithFormat:@"%ld", _randomTwo];
+//        
+//        NSString *stringMiddle = [stringBeginning stringByAppendingString:@" + "];
+//        _question = [stringMiddle stringByAppendingString:stringEnd];
+//        
+//        long sum = _randomOne + _randomTwo;
+//        _answer = sum;
         
         _leftValue = _randomOne = arc4random_uniform(90) + 10;
         _rightValue = _randomOne = arc4random_uniform(90) + 10;
