@@ -10,6 +10,7 @@
 #import "AdditionQuestion.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
+#import "QuestionManager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -17,9 +18,11 @@ int main(int argc, const char * argv[]) {
         BOOL gameOn = YES;
         
         ScoreKeeper *score = [[ScoreKeeper alloc] init];
+        QuestionManager *questions = [[QuestionManager alloc] init];
         
         do{
             AdditionQuestion *question = [[AdditionQuestion alloc] init];
+            questions
             NSLog(@"question is: %@ ?", question.question);
             
             NSString *userInput = [InputHandler parseUserInput];

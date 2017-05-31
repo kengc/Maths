@@ -12,7 +12,7 @@
 
 - (NSTimeInterval)answerTime{
     NSTimeInterval seconds = [_endTime timeIntervalSinceDate: _startTime];
-    NSLog(@"seconds %.f", seconds);
+    NSLog(@"It took %.f seconds to answer", seconds);
     return seconds;
 }
 
