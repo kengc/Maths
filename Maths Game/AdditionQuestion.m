@@ -25,7 +25,7 @@
     NSInteger rightValue = super.rightValue;
     
     NSString *lValue = [NSString stringWithFormat:@"%ld", (long)leftValue];
-    NSString *rValue = [NSString stringWithFormat:@"%ld", (long)leftValue];
+    NSString *rValue = [NSString stringWithFormat:@"%ld", (long)rightValue];
     NSString *stringMiddle = [lValue stringByAppendingString:@" + "];
     
     super.answer = leftValue + rightValue;

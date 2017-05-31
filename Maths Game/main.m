@@ -26,14 +26,8 @@ int main(int argc, const char * argv[]) {
         do{
             Question *question = [[Question alloc] init];
             
-            //Question *questionType = qFactory.generateRandomQuestion;
-            
             question = qFactory.generateRandomQuestion;
-            
-            
-            //NSLog(@"this is the questionfactory%ld", (long)questionType.answer);
-            
-            
+        
             [questions addToArrayQuestion:question];
             
             NSLog(@"question is: %@ ?", question.question);
