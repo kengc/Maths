@@ -10,4 +10,27 @@
 
 @implementation SubtractionQuestion
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self generateQuestion];
+    }
+    return self;
+}
+
+-(void) generateQuestion{
+    
+    NSInteger leftValue = super.leftValue;
+    NSInteger rightValue = super.rightValue;
+    
+    NSString *lValue = [NSString stringWithFormat:@"%ld", (long)leftValue];
+    NSString *rValue = [NSString stringWithFormat:@"%ld", (long)leftValue];
+    NSString *stringMiddle = [lValue stringByAppendingString:@" - "];
+    
+    super.answer = leftValue + rightValue;
+    super.question = [stringMiddle stringByAppendingString:rValue];
+
+}
+
 @end

@@ -13,13 +13,20 @@
 @property (nonatomic) NSString *question;
 @property (nonatomic) NSInteger answer;
 
+@property (nonatomic) NSInteger leftValue;
+@property (nonatomic) NSInteger rightValue;
+
 @property (nonatomic) long randomOne;
 @property (nonatomic) long randomTwo;
 
 @property (nonatomic) NSDate *startTime;
-@property (nonatomic) NSDate *endTime;
+
+-(void)setQuestion:(NSString *)question;
+-(void)setAnswer:(NSInteger)answer;
+-(void)generateQuestion;
 
 - (NSTimeInterval)answerTime;
-- (NSInteger)answer;
+//- (NSInteger)getAnswer;
+
 
 @end

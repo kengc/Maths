@@ -11,15 +11,18 @@
 @implementation Question
 
 - (NSTimeInterval)answerTime{
-    NSTimeInterval seconds = [_endTime timeIntervalSinceDate: _startTime];
+    
+    NSTimeInterval seconds = [[NSDate date] timeIntervalSinceDate: self.startTime];
+    
     //NSLog(@"It took %.f seconds to answer", seconds);
     return seconds;
 }
 
-- (NSInteger)answer {
-    _endTime = [NSDate date];
+-(NSInteger)answer{
+    
     return _answer;
 }
+
 
 - (instancetype)init
 {
@@ -34,10 +37,11 @@
         NSString *stringMiddle = [stringBeginning stringByAppendingString:@" + "];
         _question = [stringMiddle stringByAppendingString:stringEnd];
         
-        
         long sum = _randomOne + _randomTwo;
         _answer = sum;
         
+        _leftValue = _randomOne = arc4random_uniform(90) + 10;
+        _rightValue = _randomOne = arc4random_uniform(90) + 10;
         
         //track time
         _startTime = [NSDate date];
@@ -45,5 +49,8 @@
     return self; //return an instance of an additionquestion
 }
 
+-(void)generateQuestion{
+    
+}
 
 @end

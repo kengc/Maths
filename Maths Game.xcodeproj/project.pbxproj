@@ -86,9 +86,9 @@
 				73D02E2E1EDF1A1500F37BAB /* QuestionManager.h */,
 				73D02E2F1EDF1A1500F37BAB /* QuestionManager.m */,
 				73D02DD61EDDC76500F37BAB /* main.m */,
-				73D02DF91EDE018600F37BAB /* ScoreKeeper.h */,
 				73D02E3D1EDF3D1800F37BAB /* Math */,
 				73D02DFA1EDE018600F37BAB /* ScoreKeeper.m */,
+				73D02DF91EDE018600F37BAB /* ScoreKeeper.h */,
 				73D02DF61EDDFFEB00F37BAB /* InputHandler.h */,
 				73D02DF71EDDFFEB00F37BAB /* InputHandler.m */,
 			);

@@ -32,6 +32,7 @@
 -(NSString *)timeOutput{
   
     NSTimeInterval totalTimePerQuestion = 0.0;
+   
     
     for (Question *question in self.questions){
         //total time = iterate thru and add up times
