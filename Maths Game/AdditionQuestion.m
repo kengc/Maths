@@ -10,6 +10,17 @@
 
 @implementation AdditionQuestion
 
+- (NSTimeInterval)answerTime{
+    NSTimeInterval seconds = [_endTime timeIntervalSinceDate: _startTime];
+    NSLog(@"seconds %.f", seconds);
+    return seconds;
+}
+
+- (NSInteger)answer {
+    _endTime = [NSDate date];
+    return _answer;
+}
+
 - (instancetype)init
 {
     self = [super init];  //instantiate base object NSObject
@@ -26,6 +37,10 @@
         
         long sum = _randomOne + _randomTwo;
         _answer = sum;
+        
+        
+        //track time
+        _startTime = [NSDate date];
     }
     return self; //return an instance of an additionquestion
 }

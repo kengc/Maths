@@ -29,6 +29,7 @@ int main(int argc, const char * argv[]) {
                 
             } else{
                 
+                [question answerTime];
                 NSInteger answer = [userInput integerValue]; //don't need * for NSInteger
                 
                 NSLog(@"answer is: %ld", (long)question.answer);
@@ -41,6 +42,7 @@ int main(int argc, const char * argv[]) {
                     score.wrongAnswers += 1;
                     NSLog(@"Wrong!");
                 }
+                
                 [score currentScore];
                 //NSLog(@"your input is: %@", trimmed);
             }

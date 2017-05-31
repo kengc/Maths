@@ -16,4 +16,10 @@
 @property (nonatomic) long randomOne;
 @property (nonatomic) long randomTwo;
 
+@property (nonatomic) NSDate *startTime;
+@property (nonatomic) NSDate *endTime;
+
+- (NSTimeInterval)answerTime;
+- (NSInteger)answer;
+
 @end

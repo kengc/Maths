@@ -24,12 +24,11 @@
 -(void)currentScore{
 
     if(_rightAnswers != 0){
-        float p = _totalQuestions - _rightAnswers;
-        float percentage = p / _totalQuestions;
+        float percentage = _rightAnswers / _totalQuestions;
         float percent = percentage * 100;
-        NSLog(@"Score: %.0f right, %.0f wrong ----- %.1f%%", _rightAnswers, _wrongAnswers, percent);
+        NSLog(@"Score: %.0d total, %.0f right, %.0f wrong ----- %.1f%%",_totalQuestions, _rightAnswers, _wrongAnswers, percent);
     } else {
-        NSLog(@"Score: %.0f right, %.0f wrong ----- 0%%", _rightAnswers, _wrongAnswers);
+        NSLog(@"Score: %.0d total, %.0f right, %.0f wrong ----- 0%%", _totalQuestions, _rightAnswers, _wrongAnswers);
     }    
 }
 
